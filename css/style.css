@@ -1,0 +1,108 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* root color */
+:root {
+  --text-shadow: rgba(2, 2, 2, 0.445);
+}
+
+body {
+  height: 2000px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background: rgb(25,63,108);
+  background: linear-gradient(90deg, rgba(25,63,108,1) 0%, rgba(0,105,255,1) 100%);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Secular One', sans-serif;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 25px;
+}
+
+header {
+  /* background-color: rgb(36, 149, 255); */
+  /* background-image: url(../assets/img/background-header.jpg); */
+  /* background: rgb(25,63,108);
+  background: linear-gradient(90deg, rgba(25,63,108,1) 0%, rgba(0,105,255,1) 100%); */
+}
+
+.core-img {
+  width: 100%;
+  filter: drop-shadow(0 0 0.75rem rgb(20, 67, 220));
+}
+
+.slogan {
+  margin-top: 23%;
+}
+
+.slogan h1 {
+  font-weight: 700;
+}
+
+.text-main {
+  font-size: 50px;
+  font-weight: 500;
+  filter: drop-shadow(0px 0px 5px var(--text-shadow));
+}
+
+.text-shadow {
+  filter: drop-shadow(0px 0px 5px var(--text-shadow));
+}
+
+.carousel-control-prev-icon {
+  margin-right: 70%;
+}
+
+.carousel-control-next-icon {
+  margin-left: 70%;
+}
+
+.welcome h3 {
+  margin-top: 50px;
+}
+
+.bg-slide1 {
+  background: url(../assets/img/slide1.JPG);
+  background-position-y: 115%;
+  background-position-x: center;
+  background-size: cover;
+  min-height: 600px;
+  background-attachment: fixed;
+}
+.bg-slide2 {
+  background: url(../assets/img/slide2.JPG);
+  background-position-y: 100%;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+  
+}
+.bg-slide3 {
+  background: url(../assets/img/slid3.JPG);
+  background-position-y: 120%;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
