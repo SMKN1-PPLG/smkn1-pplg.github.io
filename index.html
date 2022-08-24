@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>PPLG SMKN1</title>
+    <!-- bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -69,15 +73,12 @@
                     <h1 class="text-light">
                       PENGAMBANGAN PERANGKAT LUNAK dan GIM
                     </h1>
-                    <p class="text-light">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate magnam voluptate, nulla quisquam a porro.
-                    </p>
+                    <p class="text-light lead"></p>
                     <button
                       type="button"
                       name=""
                       id=""
-                      class="btn bg-transparent border border-light shadow text-light"
+                      class="btn btn-outline-primary border border-light shadow text-light"
                     >
                       Lean More
                     </button>
@@ -167,8 +168,14 @@
       <div class="container welcome">
         <div class="row">
           <div class="col-lg-8">
-            <h3 class="fs-1">Welcome</h3>
-            <p>
+            <h3
+              class="fs-1 text-shadow"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              Welcome
+            </h3>
+            <p data-aos="fade-right" data-aos-duration="1000">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               suscipit debitis inventore ipsam at ea, beatae tempore quas ex
               illo repellat facilis quae doloribus iste molestiae officia
@@ -178,7 +185,13 @@
             </p>
           </div>
           <div class="col-lg-4">
-            <img src="assets/img/teacher.png" alt="" class="img-fluid" />
+            <img
+              src="assets/img/teacher.png"
+              alt=""
+              class="img-fluid text-shadow"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
       </div>
@@ -186,12 +199,59 @@
     <!-- end Main -->
 
     <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <img src="assets/img/smkbisa.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-10">
+              <div class="copyright mt-5">
+                <a class="text-dark" href="https://mdbootstrap.com/"
+                  >MDBootstrap.com</a
+                >
+                © 2020 Copyright:
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
     <!-- endFooter -->
 
+    <!-- bootstrap javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <!-- animation gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <!-- plugin text gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
+    <!-- animation aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 5,
+        delay: 0,
+        text: "Program Keahlian yang terfokus pada pengembangan perangkat lunak membantu kamu selalu terupdate dalam teknologi terbaru",
+      });
+      gsap.from(".navbar", {
+        duration: 2,
+        y: -50,
+        opacity: 0,
+        ease: "power4.out",
+      });
+      gsap.from(".slogan h1", { duration: 1, y: -100, opacity: 0 });
+      gsap.from(".slogan button", { duration: 1, y: 100, opacity: 0 });
+    </script>
   </body>
 </html>
