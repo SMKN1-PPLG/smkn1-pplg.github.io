@@ -88,7 +88,7 @@ header {
   min-height: 600px;
   background-attachment: fixed;
 }
-.bg-slide2 {
+/* .bg-slide2 {
   background: url(../assets/img/slide2.JPG);
   background-position-y: 100%;
   background-position-x: center;
@@ -104,4 +104,4 @@ header {
   background-attachment: fixed;
   background-size: cover;
   min-height: 600px;
-}
+} */
