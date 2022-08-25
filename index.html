@@ -50,6 +50,12 @@
               <a class="nav-link" href="#">Galery</a>
             </li>
             <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Rombel</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Pembelajaran</a>
+            </li>
+            <li class="nav-item me-5">
               <a class="nav-link">About</a>
             </li>
           </ul>
@@ -67,13 +73,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active bg-slide1">
             <div class="container pb-5">
-              <div class="row">
-                <div class="col-lg-12">
+              <div class="row justify-content-center">
+                <div class="col-lg-7">
                   <div class="slogan text-shadow text-center">
-                    <h1 class="text-light">
+                    <h1 class="text-light" style="background-color: red">
                       PENGAMBANGAN PERANGKAT LUNAK & GIM
                     </h1>
-                    <p class="text-light lead"></p>
+                    <p
+                      class="text-light lead"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                    >
+                      Software and Game Development
+                    </p>
                     <button
                       type="button"
                       name=""
@@ -220,11 +232,11 @@
     </script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".lead", {
-        duration: 3,
-        delay: 0,
-        text: "Program Keahlian yang terfokus pada pengembangan perangkat lunak membantu kamu selalu terupdate dalam teknologi terbaru",
-      });
+      // gsap.to(".lead", {
+      //   duration: 3,
+      //   delay: 0,
+      //   text: "Program Keahlian yang terfokus pada pengembangan perangkat lunak membantu kamu selalu terupdate dalam teknologi terbaru",
+      // });
       gsap.from(".navbar", {
         duration: 2,
         y: -50,
