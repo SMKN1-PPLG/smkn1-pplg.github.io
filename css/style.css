@@ -8,38 +8,6 @@
   --text-shadow: rgba(2, 2, 2, 0.445);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
-  background: rgb(25,63,108);
-  background: linear-gradient(90deg, rgba(25,63,108,1) 0%, rgba(0,105,255,1) 100%);
-}
-
-.navbar-brand {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Secular One', sans-serif;
-}
-
-.navbar-nav {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler-icon {
-  font-size: 25px;
-}
-
 .core-img {
   width: 100%;
   filter: drop-shadow(0 0 0.75rem rgb(20, 67, 220));
