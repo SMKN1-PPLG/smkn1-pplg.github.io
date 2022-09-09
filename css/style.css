@@ -57,20 +57,9 @@
   min-height: 600px;
   /* background-attachment: fixed; */
 }
-/* .bg-slide2 {
-  background: url(../assets/img/slide2.JPG);
-  background-position-y: 100%;
-  background-position-x: center;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 600px;
-  
+
+@media( max-width: 992px) {
+  .kajur-img {
+    width: 200px;
+  }
 }
-.bg-slide3 {
-  background: url(../assets/img/slid3.JPG);
-  background-position-y: 120%;
-  background-position-x: center;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 600px;
-} */
